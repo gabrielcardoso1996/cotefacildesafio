@@ -1,13 +1,16 @@
-.wrapper {
+import styled from "styled-components";
+
+export const FormWrapper = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 1rem;
   margin-top: -4rem;
-}
+  height: 200px;
+`;
 
-.input {
+export const FormInput = styled.input`
   background-color: var(--gray-500);
   border: solid 1px var(--gray-700);
   border-radius: 0.5rem;
@@ -16,9 +19,9 @@
   padding: 0.5rem 1rem;
   width: 100%;
   height: 54px;
-}
+`;
 
-.button {
+export const FormButton = styled.button`
   width: 90px;
   height: 54px;
   border: none;
@@ -33,8 +36,8 @@
 
   font-size: 0.875rem;
   font-weight: 700;
-}
 
-.button svg {
-  font-weight: 700;
-}
+  svg {
+    font-weight: 700;
+  }
+`;

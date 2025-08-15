@@ -1,9 +1,11 @@
-import { CountHeader } from "./CountHeader";
+import { CountHeader } from "./components/CountHeader";
 import styles from "./TodoList.module.css";
-import clipBoard from "../assets/clipboard.svg";
-import { Card } from "./Card";
-import { SubmitAction } from "./SubmitAction";
+import clipBoard from "../../assets/clipboard.svg";
+import { Card } from "./components/Card";
+import { SubmitAction } from "../../components/SubmitAction";
 import { useState, useEffect } from "react";
+import { Header } from "../../components/Header";
+import logo from "../../assets/logo.svg";
 
 interface ITask {
   id: number;
@@ -82,7 +84,7 @@ export function TodoList() {
 
   return (
     <>
-      <SubmitAction addTask={addTask} />
+      <SubmitAction add={addTask} />
       <CountHeader totalTasks={tasks.length} completedTasks={completedTasks} />
       <div className={styles.wrapper}>
         {tasks.length === 0 && (

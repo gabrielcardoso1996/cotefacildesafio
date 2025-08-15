@@ -1,18 +1,15 @@
-import { Header } from "./components/Header";
 import "./global.css";
-import  style from "./App.module.css";
-import { TodoList } from "./components/TodoList";
-
+import style from "./App.module.css";
+import { Header } from "./components/Header";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
-
   return (
     <div>
       <Header />
       <div className={style.wrapper}>
         <main>
-          <TodoList />
+          <Outlet />
         </main>
       </div>
     </div>
