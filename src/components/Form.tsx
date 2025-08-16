@@ -7,7 +7,6 @@ export const FormWrapper = styled.form`
   width: 100%;
   gap: 1rem;
   margin-top: -4rem;
-  height: 200px;
 `;
 
 export const FormInput = styled.input`

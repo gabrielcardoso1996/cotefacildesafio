@@ -1,0 +1,263 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-600);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--gray-600);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: var(--gray-500);
+  transform: translateY(-1px);
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--gray-100);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imageActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.downloadButton, .externalButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.downloadButton {
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+}
+
+.downloadButton:hover:not(:disabled) {
+  background-color: var(--blue);
+  transform: translateY(-1px);
+}
+
+.downloadButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.externalButton {
+  background-color: var(--gray-600);
+  color: var(--gray-100);
+}
+
+.externalButton:hover {
+  background-color: var(--gray-500);
+  transform: translateY(-1px);
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.basicInfo h2 {
+  margin: 0 0 1rem 0;
+  color: var(--gray-100);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--gray-300);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: var(--gray-600);
+  border-radius: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.stat svg {
+  color: var(--red-500);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--gray-600);
+}
+
+.detail strong {
+  color: var(--gray-200);
+  font-weight: 600;
+}
+
+.detail span {
+  color: var(--gray-300);
+}
+
+.authorLink {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.authorLink:hover {
+  color: var(--blue-light);
+  text-decoration: underline;
+}
+
+.colorSwatch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.colorBox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-400);
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tags strong {
+  color: var(--gray-200);
+  font-weight: 600;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  background-color: var(--gray-600);
+  color: var(--gray-300);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.error h2 {
+  margin: 0 0 1rem 0;
+  color: var(--red-500);
+  font-size: 1.5rem;
+}
+
+.error p {
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .imageActions {
+    flex-direction: column;
+  }
+  
+  .detail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { TodoList } from "../page/toDoList";
+import { TodoList } from "../pages/toDoList";
+import { SearchImage } from "../pages/searchImage";
+import { ImageDetail } from "../pages/searchImage/components/ImageDetail";
 import App from "../App";
 
 export const router = createBrowserRouter([
@@ -11,11 +13,14 @@ export const router = createBrowserRouter([
         index: true,
         element: <TodoList />,
       },
-      // Aqui você pode adicionar mais rotas no futuro
-      // {
-      //   path: "about",
-      //   element: <About />,
-      // },
+      {
+        path: "gallery",
+        element: <SearchImage />,
+      },
+      {
+        path: "image/:id",
+        element: <ImageDetail />,
+      },
     ],
   },
 ]);

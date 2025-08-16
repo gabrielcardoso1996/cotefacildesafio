@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { PlusCircle } from "@phosphor-icons/react";
-import { FormWrapper, FormInput, FormButton } from "./styles";
+import { FormWrapper, FormInput, FormButton } from "../Form";
 
 interface ISubmitActionProps {
   add: (description: string) => void;
