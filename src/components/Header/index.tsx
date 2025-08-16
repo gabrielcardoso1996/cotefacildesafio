@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderLogo, NavigationContainer, NavItem } from "./styles";
+import { HeaderContainer, NavigationContainer, NavItem } from "./styles";
 import todoIcon from "../../assets/todo-icon.svg";
 import galleryIcon from "../../assets/gallery-icon.svg";
 import dashboardIcon from "../../assets/dashboard-icon.svg";

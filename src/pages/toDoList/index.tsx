@@ -4,8 +4,6 @@ import clipBoard from "../../assets/clipboard.svg";
 import { Card } from "./components/Card";
 import { SubmitAction } from "../../components/SubmitAction";
 import { useState, useEffect } from "react";
-import { Header } from "../../components/Header";
-import logo from "../../assets/logo.svg";
 
 interface ITask {
   id: number;
@@ -19,7 +17,6 @@ export function TodoList() {
   const [tasks, setTasks] = useState<ITask[]>([]);
   const [isInitialized, setIsInitialized] = useState(false);
 
-  // Carregar tarefas do localStorage ao inicializar
   useEffect(() => {
     const savedTasks = localStorage.getItem(STORAGE_KEY);
     if (savedTasks) {
@@ -33,7 +30,6 @@ export function TodoList() {
     setIsInitialized(true);
   }, []);
 
-  // Salvar tarefas no localStorage sempre que houver mudanças (após inicialização)
   useEffect(() => {
     if (isInitialized) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
@@ -52,7 +48,6 @@ export function TodoList() {
   };
 
   const removeTask = (id: number) => {
-    //reduce to remove value in array
     const updatedTasks = tasks.reduce((acc, task) => {
       if (task.id !== id) {
         acc.push(task);
@@ -69,7 +64,6 @@ export function TodoList() {
       }
       return task;
     });
-    // order finishied tasks to the end of the list
     updatedTasks.sort((a, b) => {
       if (a.completed && !b.completed) {
         return 1;

@@ -9,10 +9,6 @@ export const HeaderContainer = styled.header`
   height: 200px;
 `;
 
-export const HeaderLogo = styled.img`
-  height: 48px;
-`;
-
 export const NavigationContainer = styled.nav`
   display: flex;
   gap: 1rem;
