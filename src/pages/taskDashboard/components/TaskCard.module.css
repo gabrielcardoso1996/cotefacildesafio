@@ -1,0 +1,119 @@
+.card {
+  background-color: var(--gray-600);
+  border: 1px solid var(--gray-500);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: grab;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.card:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.priority {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.priorityDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-400);
+}
+
+.priorityLabel {
+  color: var(--gray-300);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cardActions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--gray-400);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: var(--gray-500);
+  color: var(--gray-200);
+}
+
+.deleteButton:hover {
+  background-color: var(--red-500);
+  color: var(--gray-100);
+}
+
+.cardContent {
+  margin-bottom: 0.75rem;
+}
+
+.taskTitle {
+  margin: 0 0 0.5rem 0;
+  color: var(--gray-100);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.taskDescription {
+  margin: 0;
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.assignee, .dueDate, .createdAt {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--gray-400);
+}
+
+.createdAt {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--gray-500);
+  font-style: italic;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   fill="none"
+   version="1.1"
+   id="svg452"
+   sodipodi:docname="gallery-icon.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview454"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="20.875"
+     inkscape:cx="18.251497"
+     inkscape:cy="24"
+     inkscape:window-width="3440"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg452" />
+  <!-- Fundo circular com gradiente -->
+  <circle
+     cx="24"
+     cy="24"
+     r="22"
+     fill="url(#galleryGradient)"
+     stroke="#4EA8DE"
+     stroke-width="2"
+     id="circle427" />
+  <!-- Ícone de galeria - 4 quadrados -->
+  <rect
+     x="14.395209"
+     y="14.383233"
+     width="8"
+     height="8"
+     rx="2"
+     fill="#5e60ce"
+     opacity="0.9"
+     id="rect429" />
+  <rect
+     x="24.39521"
+     y="14.383233"
+     width="8"
+     height="8"
+     rx="2"
+     fill="#4ea8de"
+     opacity="0.9"
+     id="rect431" />
+  <rect
+     x="14.395209"
+     y="24.383234"
+     width="8"
+     height="8"
+     rx="2"
+     fill="#4ea8de"
+     opacity="0.9"
+     id="rect433" />
+  <rect
+     x="24.39521"
+     y="24.383234"
+     width="8"
+     height="8"
+     rx="2"
+     fill="#5e60ce"
+     opacity="0.9"
+     id="rect435" />
+  <!-- Pequenos círculos decorativos -->
+  <circle
+     cx="18.39521"
+     cy="18.383234"
+     r="1"
+     fill="#ffffff"
+     id="circle437" />
+  <circle
+     cx="28.39521"
+     cy="18.383234"
+     r="1"
+     fill="#ffffff"
+     id="circle439" />
+  <circle
+     cx="18.39521"
+     cy="28.383234"
+     r="1"
+     fill="#ffffff"
+     id="circle441" />
+  <circle
+     cx="28.39521"
+     cy="28.383234"
+     r="1"
+     fill="#ffffff"
+     id="circle443" />
+  <defs
+     id="defs450">
+    <linearGradient
+       id="galleryGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#4EA8DE;stop-opacity:0.1"
+         id="stop445" />
+      <stop
+         offset="100%"
+         style="stop-color:#5E60CE;stop-opacity:0.1"
+         id="stop447" />
+    </linearGradient>
+  </defs>
+</svg>
