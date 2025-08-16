@@ -10,11 +10,14 @@
 
   --blue-dark: #1e6f9f;
   --blue: #4ea8de;
+  --blue-500: #3B82F6;
   --purple-dark: #5e60ce;
   --purple: #8284fa;
 
   --green-300: #00b37e;
   --green-500: #00875f;
+
+  --yellow-500: #EAB308;
 
   --red-500: #f75a68;
 }
